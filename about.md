@@ -3,28 +3,14 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+## Who Am I?
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Raritet is, for now at least, just me. So I'll proceed like this is a personal site.
 
-There are currently two themes built on Poole:
+By day I'm an electrical engineer that designs power and control systems for heavy movable structures, like drawbridges. (We call them generically "movable bridges," but that's the engineer in me talking.) By night, however, when I'm not flaking out dreaming about some future project I may or may not build, I try to quickly fabricate little prototypes exploring the intersection of art and engineering. Lest you think that I am some sort of philosopher, a lot of the projects are just for humor's sake as well.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I have been bad at documenting my work, so over the next few weeks and months I'll be updating this site with both old and new projects and ideas. I'll also migrate my old blog here---there's a lot of interesting stuff in there. It warrants adding this to your feedreader (though I think I still need to set that up, so I guess sit tight). I'll also try to post updates to more immediate media like Twitter and whatnot.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Photography
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+I also like to take pictures. Photography is the other thing I do well besides engineering (though I hope I'm also a good thinker and designer, but I have more to show for it on the photography front). I have had some commissions, and I am available for more. Take a look at my [portfolio](http://www.andy-oliver.com) to see some of my work.
