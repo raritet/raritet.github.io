@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Raritet
 tagline:          'Art Design Engineering'
-description:      'Art, design, and engineering. Using the <a href="http://hyde.getpoole.com/">Hyde</a> Jekyll theme by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      'Art, design, and engineering.'
 url:              http://raritet.github.io
 baseurl:          /
 
