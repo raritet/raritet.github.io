@@ -9,7 +9,7 @@ Raritet is, for now at least, just me. So I'll proceed like this is a personal s
 
 By day I'm an electrical engineer that designs power and control systems for heavy movable structures, like drawbridges. (We call them generically "movable bridges," but that's the engineer in me talking.) By night, however, when I'm not flaking out dreaming about some future project I may or may not build, I try to quickly fabricate little prototypes exploring the intersection of art and engineering. Lest you think that I am some sort of philosopher, a lot of the projects are just for humor's sake as well.
 
-I have been bad at documenting my work, so over the next few weeks and months I'll be updating this site with both old and new projects and ideas. I'll also migrate my old blog here---there's a lot of interesting stuff in there. It warrants [adding to your feedreader.](raritet.github.io/atom.xml) I'll also try to post updates to more immediate media like Twitter and whatnot.
+I have been bad at documenting my work, so over the next few weeks and months I'll be updating this site with both old and new projects and ideas. I'll also migrate my old blog here---there's a lot of interesting stuff in there. It warrants [adding to your feedreader.](atom.xml) I'll also try to post updates to more immediate media like Twitter and whatnot.
 
 ## Photography
 
