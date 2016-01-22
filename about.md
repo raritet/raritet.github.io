@@ -18,3 +18,5 @@ I also like to take pictures. Photography is the other thing I do well besides e
 ## What is a Raritet?
 
 It means _rarity_ in Swedish, and in this context it's being used like "oddity" or "curiosity" as in a cabinet of curiosities. My step mother (really just one of my mothers) is Swedish, though I have no real connection to Scandinavia other than the fact that I absolutely loved my [two](http://www.andy-oliver.com/southern-norway/) [trips](http://www.andy-oliver.com/tromsoe-norway/) to Norway and can't wait to go again.
+
+This site uses the [Hyde](http://hyde.getpoole.com/) Jekyll theme by [@mdo](https://twitter.com/mdo).
