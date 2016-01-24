@@ -23,4 +23,6 @@ It means _rarity_ in Swedish, and in this context it's being used like _oddity_ 
 
 At the risk of sounding like a jack of all trades and master of none, I also like music and make beats from time to time. I post them to [Soundcloud](https://soundcloud.com/coherent-noise) when I do.
 
-This site uses the [Hyde](http://hyde.getpoole.com/) Jekyll theme by [@mdo](https://twitter.com/mdo).
+## Credits
+
+This site uses the [Hyde](http://hyde.getpoole.com/) Jekyll theme by [@mdo](https://twitter.com/mdo). I set it up for the most part by simply forking Hyde into my Github Pages root. I also got some help from [this page](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) (and others too numerous to mention).
