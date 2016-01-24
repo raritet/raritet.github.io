@@ -19,4 +19,8 @@ I also like to take pictures. Photography is the other thing I do well besides e
 
 It means _rarity_ in Swedish, and in this context it's being used like _oddity_ or _curiosity_, as in a cabinet of curiosities. My step mother (really just one of my mothers---the modifier _step_ is irrelevant) is Swedish, though I have no other connection to Scandinavia other than the fact that I absolutely loved my [two](http://www.andy-oliver.com/southern-norway/) [trips](http://www.andy-oliver.com/tromsoe-norway/) to Norway and can't wait to go again.
 
+## Music
+
+At the risk of sounding like a jack of all trades and master of none, I also like music and make beats from time to time. I post them to [Soundcloud](https://soundcloud.com/coherent-noise) when I do.
+
 This site uses the [Hyde](http://hyde.getpoole.com/) Jekyll theme by [@mdo](https://twitter.com/mdo).
