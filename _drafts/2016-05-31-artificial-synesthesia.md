@@ -5,6 +5,12 @@ date: {}
 published: true
 ---
 
+This post has been a good while in the making. For maybe a year or so, I've been mulling an idea for a novel application of augmented reality systems. (I've actually been mulling several ideas, but this one is perhaps the most exciting to me at the moment.) After a good bit of research, it's pretty clear to me that the programming required is beyond my ability to perform on evenings and weekends—those of which are free of other obligations, no less. So, I'm going to present my research to-date here, summarized loosely in the form of a (very informal) research proposal. And over the next few weeks and months I'll free other ideas from the confines of my notebooks in similar form.
+
+## Abstract
+
+>Synesthesia, the crossing in perception of one sense with another (think scents having color or sounds manifesting with a tangible texture), is a trait shared by perhaps four to five percent of people. In popular literature, synesthesia is often anecdotally considered beneficial to creativity, priming the mind with hard-wired metaphor. If synesthesia is in fact beneficial to creativity, an augmented- or mixed-reality system designed to mix senses could provide non-synesthetes with nearly instinctive capabilities for metaphor and all the creative benefits that arise therein.
+
 Augmented reality (AR) and now mixed reality (MR) are the new cool thing, as I'm sure you've noticed. No one can disagree that this stuff will be useful for all the obvious things like heads-up displays of contextually useful information. But to me that has always seemed boring, for lack of a better term. Perhaps it's because it's obvious; _Of course_ you would display relevant facts next to what you are looking at through your MR headset. That's what they've been doing in every cyborg movie for who knows how long. I should also note that this was a thing in the MIT Media Lab now twenty years ago or so.
 
 To me the real neat stuff is when you come up with an entirely new use case. I think I have thought of one.
