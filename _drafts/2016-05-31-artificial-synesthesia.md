@@ -9,7 +9,7 @@ Augmented reality (AR) and now mixed reality (MR) are the new cool thing, as I'm
 
 To me the real neat stuff is when you come up with an entirely new use case. I think I have thought of one.
  
-While reading about Vladimir Nabokov's particular case of grapheme-color synesthesia---the condition in which one sees letters with color---it seemed to me like it should be pretty straightforward to build an augmented reality app to simulate it for those of us not lucky enough to have been endowed with such a gift. Run the live stream of your cell phone camera through an OCR (optical character recognition) program to find text in the field of view, figure out what letter each one is, outline it, and fill that outline with the color from the lookup table.
+While reading about Vladimir Nabokov's particular case of grapheme-color synesthesia—the condition in which one sees letters with color—it seemed to me like it should be pretty straightforward to build an augmented reality app to simulate it for those of us not lucky enough to have been endowed with such a gift. Run the live stream of your cell phone camera through an OCR (optical character recognition) program to find text in the field of view, figure out what letter each one is, outline it, and fill that outline with the color from the lookup table.
 
 It turns out that it's not as straightforward as I thought. I had hoped to more or less replace the fiducial marker used in AR applications with the output of an OCR library, and I suspect that might still be possible. But as far as I can tell, the gold standard open source OCR library, Tesseract, doesn't work like that. Rather, it just outputs the characters corresponding to the text it finds in the image.
 
