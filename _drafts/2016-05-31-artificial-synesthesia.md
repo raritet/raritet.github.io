@@ -45,7 +45,7 @@ In terms of hardware, as noted above, in my original concept the device would si
 
 ## Approach
 
-On the input end, a computer receives a video stream of the scene. This is processed as a series of images and, in the case of a virtual reality (VR) or cell phone based system, passed through to the output screen. 
+On the input end, a computer receives a video stream of the scene. This is processed as a series of images and, in the case of a virtual reality (VR) or cell phone based system, passed through to the output screen.
 
 That video stream is also passed to the OCR subsystem, which analyzes each frame of video (or every nth frame of video as needed to accomodate the algorithm and the hardware) for text characters anywhere in the field of view. When the OCR subsystem locates letters, it sends closed vector outlines of those letters, along with information as to which letter is represented, to something which will overlay the video. For the most authentic experience, the OCR subsystem should process frames at a rate comparable to that at which a person can recognize a letter in her visual field.
 
@@ -80,7 +80,7 @@ Here is a table I compiled from Nabokov's description of his grapheme-color syne
 | _sh_ | fluffy-gray | * | |
 | _t_ | pistachio | * | |
 | _u_ | brassy with an olive sheen | * | Also in the yellow group. |
-| _v_ | rose quanrtz | * | |
+| _v_ | rose quartz | * | |
 | _w_ | dull green, combined somehow with violet | * | |
 | _x_ | steely blue | * | |
 | _y_ | bright-golden | * | |
@@ -90,7 +90,7 @@ Here is a table I compiled from Nabokov's description of his grapheme-color syne
 
 Finally, the overlay is mixed back in to the video stream and displayed on the screen. Even though we are talking about video of the "real world," you can see from the signal flow described above that this is all still a two-dimensional system.
 
-In the case of the MR systems like Magic Leap, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen.
+In the case of the MR systems like Magic Leap, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen. The most straightforward way I see of doing this is with the "environment understanding cameras" in the Microsoft HoloLens for [spatial mapping](https://developer.microsoft.com/en-us/windows/holographic/spatial_mapping). In this case I can use the spatial mapping to tell my program where is space a piece of text is, and more importantly the orientation of the plane it is on.
 
 Given the problems discussed in the Background section, based on my current research it appears that I will have to explore the innards of the Tesseract OCR library to extract the outline information
 
