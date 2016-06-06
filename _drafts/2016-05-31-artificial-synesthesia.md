@@ -96,6 +96,8 @@ In the case of the MR systems, the signal flow must account for the third dimens
 
 Given the problems discussed in the Background section, based on my current research it appears that I will have to explore the innards of the Tesseract OCR library to extract the outline information
 
+### Other Considerations
+
 It looks like I might need to take a little artistic license in implementing some of these colors. Also note that many of these letters rely on the sound, or the phoneme, and not just the shape of the letter (the grapheme). (I believe they should call this phoneme-color synesthesia instead of grapheme-color, but that's neither here nor there.) So to really get this right, the OCR algorithm would also need to look at the word, extract the sounds, and map them back to the letters. But in a proof-of-concept I don't think we really need to do that.
 
 ---
