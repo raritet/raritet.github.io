@@ -17,7 +17,7 @@ Synesthesia, the crossing in perception of one sense with another (think scents 
 
 ## Introduction
 
-Augmented reality (AR) and now mixed reality (MR) are the new cool thing, as those of us in [the tech world have no doubt noticed](http://www.wired.com/2016/04/magic-leap-vr/). No one can disagree that this technology will be useful for all the obvious things like heads-up displays of contextually useful information. But to me that has always seemed _boring_, for lack of a better term. Perhaps it's because it's obvious; _Of course_ you would display relevant facts next to what you are looking at through your MR headset. That's what they've been doing in every cyborg movie for who knows how long. For that matter, Thad Starner started with the predecessor to Google Glass during his time at the MIT Media Lab back in 1993.
+Augmented reality (AR) and now mixed reality (MR) are the new cool thing, as those of us in [the tech world have no doubt noticed](http://www.wired.com/2016/04/magic-leap-vr/). No one can disagree that this technology will be useful for all the obvious things like heads-up displays of contextually useful information. But to me that has always seemed _boring_, for lack of a better term. Perhaps it's because it's obvious; _Of course_ you would display relevant facts next to what you are looking at through your MR headset. That's what they've been doing in every cyborg movie for who knows how long. For that matter, Thad Starner pioneered this in real life with the [predecessor to Google Glass](http://archive.boston.com/business/technology/innoeco/2012/07/the_mit_roots_of_google_glass.html) during his time at the MIT Media Lab back in 1993.
 
 To me the real neat stuff is when you come up with an entirely new use case. I think I have thought of one.
 
@@ -25,37 +25,37 @@ Synesthesia is a neurological phenomenon wherein the stimulation of one sense (o
 
 The locations of the brain corresponding to the perception of the senses involved in a particular case of synesthesia are typically physically adjacent. Researchers therefore theorize that synesthesia may be as simple as brain activity spilling out of one sensory region and into adjacent regions.
 
-There is a seemingly high concentration of synesthetes among the world's most creative people. I've heard synesthesia described as an instinctive form of metaphor. Perhaps what a "normal" person thinks is an incredibly imaginative metaphor, is simply just how the writer sees. Many believe that synesthesia is also common in children, though they do not often have the facilities to communicate it or the mentorship to nurture it. If synesthesia is in fact common in children, it may, at least in part, explain the nature of their highly active imaginations. In any case, examples of synesthesia exist in our daily language, even among non-synesthetes, such as the timbre of a musical instrument being dark or bright, or even things like _sharp_ cheddar cheese.
+There is a seemingly high concentration of synesthetes among the world's most creative people. I've heard synesthesia described as an instinctive form of metaphor. Perhaps what a "normal" person thinks is an incredibly imaginative metaphor is simply the way the writer sees the world on a neurological level. Many believe that synesthesia is also common in children, though they do not often have the facilities to communicate it or the mentorship to nurture it. If synesthesia is in fact common in children, it may, at least in part, explain the nature of their highly active imaginations. In any case, examples of synesthesia exist in our daily language, even among non-synesthetes, such as the timbre of a musical instrument being dark or bright, or even things like _sharp_ cheddar cheese.
 
 ---
 
 ## Background
 
-While reading about Vladimir Nabokov's particular case of grapheme-color synesthesia—the condition in which one sees letters with color—it seemed to me like it should be pretty straightforward to build an augmented reality app to simulate it for those of us not fortunate enough to have been endowed with such a gift: Run the video stream of a cell phone camera through an OCR (optical character recognition) program to find text within the field of view, outline each letter, and fill those outlines with the color called for in a lookup table.
+While reading about Vladimir Nabokov's particular case of grapheme-color synesthesia—the condition in which one sees letters with color—it seemed to me like it should be pretty straightforward to build an augmented reality app to simulate it for those of us not fortunate enough to have been endowed with such a gift: Run the video stream of a cell phone camera through an OCR (optical character recognition) program to find text within the field of view, outline each letter, and fill those outlines with the color called for on a lookup table.
 
-It turns out that implementing this is not as straightforward as I thought. In basic AR applications the developer trains a computer vision (CV) library such as OpenCV with an image called a "fiducial marker." OpenCV then looks for this image in the video stream and can overlay something on top. This fiducial marker often has a geometric pattern such that its orientation in space is easily determined, allowing the overlay to make sense in three-dimensions. There are several toys and video games that make use of this, with three-dimensional characters rendered on a playing field.
+It turns out that implementing this is not as straightforward as I thought. In basic AR applications the developer trains a computer vision (CV) library such as [OpenCV](http://opencv.org/) with an image called a "fiducial marker." OpenCV then looks for this image in the video stream and can overlay something on top. This fiducial marker often has a geometric pattern such that its orientation in space is easily determined, allowing the overlay to make sense in three-dimensions. There are several toys and [video games](http://www.nintendo.com/3ds/ar-cards) that make use of this, with three-dimensional characters rendered on a playing field.
 
-I had hoped to more or less replace the fiducial marker used in AR applications with the output of an OCR library; and I suspect that might still be possible. But, as far as I can tell at this point, the gold standard open source OCR library, Tesseract, doesn't work like that. Rather, it just outputs the characters corresponding to the text it finds in the image.
+I had hoped to more or less replace the fiducial marker used in AR applications with the output of an OCR library; and I suspect that might still be possible. But, as far as I can tell at this point, the gold standard open source OCR library, [Tesseract](https://github.com/tesseract-ocr), doesn't work like that. Rather, it just outputs the characters corresponding to the text it finds in the image.
 
-Other ideas included training the CV library with hundreds or thousands of fiducial markers; one for every letter in every common typeface. However, that will likely be very computationally intensive. And it just seems inelegant when we know that OCR software exists.
+Other ideas included training the CV library with hundreds or thousands of fiducial markers; one for every letter in every common typeface. However, that will likely be very computationally intensive. And it seems outright inelegant when we know that OCR software exists.
 
-In terms of hardware, as noted above, in my original concept the device would simply be a cell phone running an AR app developed in Unity or something similar, but with an OCR library providing the fiducial marker in real time instead of OpenCV finding it in the video stream. For a more immersive experience, MR hardware like Microsoft's HoloLens or the Magic Leap device are particularly exciting. The fact that grapheme-color synesthetes see both the visual color of the text and the synesthetic color of the text is perfect for the MR devices. On those systems the user sees the projected images as slightly translucent, with the real world still there in the background. (I should note that "projected image" is probably not the correct term to use for light-field based systems such as that from Magic Leap.)
+In terms of hardware, as noted above, in my original concept the device would simply be a cell phone running an AR app developed in [Unity](https://unity3d.com/) or something similar, but with an OCR library providing the fiducial marker in real time instead of OpenCV finding it in the video stream. For a more immersive experience, MR hardware like Microsoft's [HoloLens](https://www.microsoft.com/microsoft-hololens/en-us) or the [Magic Leap](https://www.magicleap.com/) device are particularly exciting. The fact that grapheme-color synesthetes see both the visual color of the text and the synesthetic color of the text is perfect for the MR devices. On those systems the user sees the projected images as slightly translucent, with the real world still there in the background. (I should note that "projected image" is probably not the correct term to use for these light-field based systems.)
 
 ---
 
 ## Approach
 
+### How the System Works
+
 On the input end, a computer receives a video stream of the scene. This is processed as a series of images and, in the case of a virtual reality (VR) or cell phone based system, passed through to the output screen.
 
 That video stream is also passed to the OCR subsystem, which analyzes each frame of video (or every nth frame of video as needed to accomodate the algorithm and the hardware) for text characters anywhere in the field of view. When the OCR subsystem locates letters, it sends closed vector outlines of those letters, along with information as to which letter is represented, to something which will overlay the video. For the most authentic experience, the OCR subsystem should process frames at a rate comparable to that at which a person can recognize a letter in her visual field.
 
-The video overlay subsystem takes the vector outlines of the letters and fills them with the appropriate color based on the attached letter information compared against the lookup table.
-
-Here is a table I compiled from Nabokov's description of his grapheme-color synesthesia in his autobiography:
+The video overlay subsystem takes the vector outlines of the letters and fills them with the appropriate color based on the attached letter information compared against the lookup table. Speaking of lookup tables, here is one I compiled from Nabokov's description of his grapheme-color synesthesia in his autobiography:
 
 | Letter | Color | RGB Value | Notes |
 | :---: | :--- | :---: | :--- |
-| _a_ | weathered wood | * | In English, at least. I take this to mean the _ae_ sound like "at" or "that." Nabokov says this is in the black group. |
+| _a_ | weathered wood | * | In English, at least. I take this to mean the _æ_ sound like "at" or "that." Nabokov says this is in the black group. |
 | _a_ | polished ebony | * | The French _a_, which I assume is the phonetic _a_. |
 | _b_ | burnt sienna | * | |
 | _c_ | light blue | * | |
@@ -88,9 +88,11 @@ Here is a table I compiled from Nabokov's description of his grapheme-color syne
 
 \* _I am working on selecting RGB values and may ultimately select a different method to store the color. This is particularly important for the colors that Nabokov describes with motion or texture, such as those for 's' and 'a.'_
 
-Finally, the overlay is mixed back in to the video stream and displayed on the screen. Even though we are talking about video of the "real world," you can see from the signal flow described above that this is all still a two-dimensional system.
+Finally, the overlay is mixed back in to the video stream and displayed on the screen. Even though we are talking about video of the "real world," you can see from the signal flow described above that this is all still a two-dimensional system (at least when implemented as a simple cell phone based AR app).
 
-In the case of the MR systems like Magic Leap, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen. The most straightforward way I see of doing this is with the "environment understanding cameras" in the Microsoft HoloLens for [spatial mapping](https://developer.microsoft.com/en-us/windows/holographic/spatial_mapping). In this case I can use the spatial mapping to tell my program where is space a piece of text is, and more importantly the orientation of the plane it is on.
+In the case of the MR systems, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen. This is obviously very important for MR systems and is implemented in the Microsoft HoloLens with "environment understanding cameras" providing [spatial mapping](https://developer.microsoft.com/en-us/windows/holographic/spatial_mapping). In this case I can use the spatial mapping to tell my program where in three dimensions a piece of text is, and more importantly the orientation of the plane that text is written on.
+
+### Software Implementation
 
 Given the problems discussed in the Background section, based on my current research it appears that I will have to explore the innards of the Tesseract OCR library to extract the outline information
 
