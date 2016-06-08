@@ -5,7 +5,9 @@ date: {}
 published: true
 ---
 
-This post has been a good while in the making. For maybe a year or so, I've been mulling an idea for a novel application of augmented reality systems. (I've actually been mulling several ideas, but this one is perhaps the most exciting to me at the moment.) After a good bit of research, it's pretty clear to me that the programming required is beyond my ability to perform on evenings and weekends—those of which are free of other obligations, no less. So, I'm going to present my research to-date here, summarized loosely in the form of a (very informal) research proposal. I'm kind of excited now to develop some ideas further and to make more exhibits for people to better see what I'm talking about. But for now this will do.
+This post has been a good while in the making. For maybe a year or so, I've been mulling an idea for a novel application of augmented reality systems. (I've actually been mulling several ideas, but this one is perhaps the most exciting to me at the moment.) After a good bit of research, it's pretty clear to me that the programming required is beyond my ability to perform on evenings and weekends—those of which are free of other obligations, no less. So, I'm going to present my research to-date here, summarized loosely in the form of a (very informal) research proposal.
+
+I'm kind of excited now to develop some ideas further and to make more exhibits for people to better see what I'm talking about. But for now this will do.
 
 And over the next few weeks and months I'll free other ideas from the confines of my notebooks in similar form.
 
