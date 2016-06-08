@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Artificial Synesthesia
-date: {}
+date: 2016-06-08
 published: true
 ---
 
