@@ -84,24 +84,40 @@ The video overlay subsystem takes the vector outlines of the letters and fills t
 | _w_ | dull green, combined somehow with violet | * | |
 | _x_ | steely blue | * | |
 | _y_ | bright-golden | * | |
-| _z_ | thundercloud bluish | * | |
+| _z_ | thundercloud bluish | * | | 
 
 \* _I am working on selecting RGB values and may ultimately select a different method to store the color. This is particularly important for the colors that Nabokov describes with motion or texture, such as those for 's' and 'a.'_
 
 Finally, the overlay is mixed back in to the video stream and displayed on the screen. Even though we are talking about video of the "real world," you can see from the signal flow described above that this is all still a two-dimensional system (at least when implemented as a simple cell phone based AR app).
 
-In the case of the MR systems, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen. This is obviously very important for MR systems and is implemented in the Microsoft HoloLens with "environment understanding cameras" providing [spatial mapping](https://developer.microsoft.com/en-us/windows/holographic/spatial_mapping). In this case I can use the spatial mapping to tell my program where in three dimensions a piece of text is, and more importantly the orientation of the plane that text is written on.
+In the case of the MR systems, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen. This is obviously very important for MR systems and is implemented in the Microsoft HoloLens with something they call "environment understanding cameras" providing [spatial mapping](https://developer.microsoft.com/en-us/windows/holographic/spatial_mapping). In this case I can use the spatial mapping to tell my program where in three dimensions a piece of text is, and more importantly the orientation of the plane that text is written on. The the color fills can be drawn in the same plane.
 
-### Software Implementation
+### Software Implementation and Problems
 
-Given the problems discussed in the Background section, based on my current research it appears that I will have to explore the innards of the Tesseract OCR library to extract the outline information
+Given the problems discussed in the Background section, based on my current research it appears that I will have to explore the innards of the Tesseract OCR library to extract the needed outline information. It is my understanding that Tesseract finds outlines—or uses outlines—to make a judgment as to what text is represented. But it is not clear that that process is made transparent enough to reach in and play with intermediate steps.
+
+I suppose another problem will be determining if something is in fact text. Otherwise, my program might just end up demanding that Tesseract make a guess as to what text an outline represents, whether it actually is text or not. That will lead to all sorts of funny results with random color areas all over the view. That is not necessarily a bad thing, and could provide the user with something like _artifical imagination_ as a row of light poles starts to look like a string of capital 'I's or lowercase 'L's. In fact, this idea warrants further study as a separate concept.
+
+But if we want to stick with the clean artificial synesthesia implementation, we need to remove the noise. If Tesseract provides a certainty of its output (another pending research question), we can use that to determine whether we should in fact apply a color overlay at a particular location. If not, we will again have to reach in to the library and see if we can find some variable somewhere that we can use to make some sort of judgment on the quality of the character recognition.
+
+Aside from the character recognition problems, the 3D programming aspect of the system, though difficult, seems at this point to be "straightforward" in that what we want to do, essentially just drawing planes in three dimensions, is not new or unusual.
 
 ### Other Considerations
 
-It looks like I might need to take a little artistic license in implementing some of these colors. Also note that many of these letters rely on the sound, or the phoneme, and not just the shape of the letter (the grapheme). (I believe they should call this phoneme-color synesthesia instead of grapheme-color, but that's neither here nor there.) So to really get this right, the OCR algorithm would also need to look at the word, extract the sounds, and map them back to the letters. But in a proof-of-concept I don't think we really need to do that.
+Taking a look at the grapheme-color table a few paragraphs above, it looks like I might need to take a little artistic license in the implementation. Nabokov certainly took some artistic license, piling synesthetic descriptions on top of synesthesia (see _on_ in particular).
+
+Also note that many of these letters rely on the sound, or the phoneme, and not just the shape of the letter (the grapheme). (I believe they should call this phoneme-color synesthesia instead of grapheme-color, but that's neither here nor there.) So to really get this right, the OCR algorithm would also need to look at the word, extract the sounds, and map them back to the letters. But for a proof-of-concept we don't need to do that right now.
 
 ---
 
 ## Future Work
 
-Imagine being able to load up some famous synesthete's particular in your MR headset and see the world through their eyes.
+In future implementations, the color overlay step of image processing could include some more "life," perhaps animating a swirly, colored cloud within the outlines to really get the user to see things like the original synesthete.
+
+Speaking of "original synesthete," imagine being able to load up some particular famous synesthete's "program" in your MR headset and see the world through their eyes. When you're done with Nabokov, just load up the program for Nikola Tesla, or Wassily Kandinsky, or whoever (to the extent that we have enough infomration to recreate their synesthesia).
+
+Of course grapheme-color synesthesia is not the only type. Chromesthesia, when sounds trigger a color sensation, could be relatively easily implemented in an MR headset. In fact, I probably should have started with that one since many chromesthetes (I just made that word up, I think) report that the visual phenomena show up much as though projected on a screen before them. Notably, many MR systems have a sense of the user's gaze, so they can tone down or relocate the visual manifestations away from where the user is looking so that the chromesthesia does not interfere with normal function.
+
+Auditory-tactile synesthesia. Smell-color. Visual-tactile. There are of course many more types, and with the computer, we can invent yet more.
+
+As mentioned above, the possibility of articifially augmented imagination.
