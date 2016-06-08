@@ -25,6 +25,8 @@ Synesthesia is a neurological phenomenon wherein the stimulation of one sense (o
 
 The locations of the brain corresponding to the perception of the senses involved in a particular case of synesthesia are typically physically adjacent. Researchers therefore theorize that synesthesia may be as simple as brain activity spilling out of one sensory region and into adjacent regions.
 
+![Exhibit: Synesthesia Mechanism](http://raritet-blog.s3.amazonaws.com/img/synesthesia.png)
+
 There is a seemingly high concentration of synesthetes among the world's most creative people. I've heard synesthesia described as an instinctive form of metaphor. Perhaps what a "normal" person thinks is an incredibly imaginative metaphor is simply the way the writer sees the world on a neurological level. Many believe that synesthesia is also common in children, though they do not often have the facilities to communicate it or the mentorship to nurture it. If synesthesia is in fact common in children, it may, at least in part, explain the nature of their highly active imaginations. In any case, examples of synesthesia exist in our daily language, even among non-synesthetes, such as the timbre of a musical instrument being dark or bright, or even things like _sharp_ cheddar cheese.
 
 ---
@@ -32,6 +34,8 @@ There is a seemingly high concentration of synesthetes among the world's most cr
 ## Background
 
 While reading about Vladimir Nabokov's particular case of grapheme-color synesthesia—the condition in which one sees letters with color—it seemed to me like it should be pretty straightforward to build an augmented reality app to simulate it for those of us not fortunate enough to have been endowed with such a gift: Run the video stream of a cell phone camera through an OCR (optical character recognition) program to find text within the field of view, outline each letter, and fill those outlines with the color called for on a lookup table.
+
+![Exhibit: Grapheme-Color Synesthesia](http://raritet-blog.s3.amazonaws.com/img/grapheme-color.png)
 
 It turns out that implementing this is not as straightforward as I thought. In basic AR applications the developer trains a computer vision (CV) library such as [OpenCV](http://opencv.org/) with an image called a "fiducial marker." OpenCV then looks for this image in the video stream and can overlay something on top. This fiducial marker often has a geometric pattern such that its orientation in space is easily determined, allowing the overlay to make sense in three-dimensions. There are several toys and [video games](http://www.nintendo.com/3ds/ar-cards) that make use of this, with three-dimensional characters rendered on a playing field.
 
@@ -84,13 +88,17 @@ The video overlay subsystem takes the vector outlines of the letters and fills t
 | _w_ | dull green, combined somehow with violet | * | |
 | _x_ | steely blue | * | |
 | _y_ | bright-golden | * | |
-| _z_ | thundercloud bluish | * | | 
+| _z_ | thundercloud bluish | * | |
 
 \* _I am working on selecting RGB values and may ultimately select a different method to store the color. This is particularly important for the colors that Nabokov describes with motion or texture, such as those for 's' and 'a.'_
 
 Finally, the overlay is mixed back in to the video stream and displayed on the screen. Even though we are talking about video of the "real world," you can see from the signal flow described above that this is all still a two-dimensional system (at least when implemented as a simple cell phone based AR app).
 
-In the case of the MR systems, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen. This is obviously very important for MR systems and is implemented in the Microsoft HoloLens with something they call "environment understanding cameras" providing [spatial mapping](https://developer.microsoft.com/en-us/windows/holographic/spatial_mapping). In this case I can use the spatial mapping to tell my program where in three dimensions a piece of text is, and more importantly the orientation of the plane that text is written on. The the color fills can be drawn in the same plane.
+![Exhibit: Signal Flow](http://raritet-blog.s3.amazonaws.com/img/signal_flow.png)
+
+In the case of the MR systems, the signal flow must account for the third dimension so that the letter's color overlay shows up on top of the letter in space and not just as paint on a screen. This is obviously very important for MR systems and is implemented in the Microsoft HoloLens with something they call "environment understanding cameras" providing [spatial mapping](https://developer.microsoft.com/en-us/windows/holographic/spatial_mapping). In this case I can use the spatial mapping to tell my program where in three dimensions a piece of text is, and more importantly the orientation of the plane that text is written on. The color fills can be drawn in the same plane.
+
+![Exhibit: Mapping in 3D](http://raritet-blog.s3.amazonaws.com/img/mapping.png)
 
 ### Software Implementation and Problems
 
@@ -107,6 +115,8 @@ Aside from the character recognition problems, the 3D programming aspect of the 
 Taking a look at the grapheme-color table a few paragraphs above, it looks like I might need to take a little artistic license in the implementation. Nabokov certainly took some artistic license, piling synesthetic descriptions on top of synesthesia (see _on_ in particular).
 
 Also note that many of these letters rely on the sound, or the phoneme, and not just the shape of the letter (the grapheme). (I believe they should call this phoneme-color synesthesia instead of grapheme-color, but that's neither here nor there.) So to really get this right, the OCR algorithm would also need to look at the word, extract the sounds, and map them back to the letters. But for a proof-of-concept we don't need to do that right now.
+
+![Exhibit: Phoneme-Color Synesthesia](http://raritet-blog.s3.amazonaws.com/img/phoneme-color.png)
 
 ---
 
