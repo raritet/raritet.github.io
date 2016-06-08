@@ -55,7 +55,7 @@ The video overlay subsystem takes the vector outlines of the letters and fills t
 
 | Letter | Color | RGB Value | Notes |
 | :---: | :--- | :---: | :--- |
-| _a_ | weathered wood | * | In English, at least. I take this to mean the _æ_ sound like "at" or "that." Nabokov says this is in the black group. |
+| _a_ | weathered wood | * | I take this to mean the _æ_ sound like "at" or "that." Nabokov says this is in the black group. |
 | _a_ | polished ebony | * | The French _a_, which I assume is the phonetic _a_. |
 | _b_ | burnt sienna | * | |
 | _c_ | light blue | * | |
