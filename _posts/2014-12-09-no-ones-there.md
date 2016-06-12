@@ -1,8 +1,9 @@
 ---
-layout: post
-title: No One's There
-date: 2014-12-09 20:00
-category: My Photographs
+layout:     post
+title:      No One's There
+date:       2014-12-09 20:00
+categories: [My Photographs]
+tags:       [photography, cruise]
 ---
 
 ![The Sea over the Side of a Cruise Ship](http://raritet-blog.s3.amazonaws.com/img/DSCF1517.jpg)

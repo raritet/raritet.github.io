@@ -22,3 +22,6 @@ version:          0.1
 
 github:
   repo:           https://github.com/raritet/raritet.github.io
+
+# Plugins
+gems:             [jekyll-paginate]

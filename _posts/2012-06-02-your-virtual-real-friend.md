@@ -1,8 +1,9 @@
 ---
-layout: post
-title: Your Virtual Real Friend
-date: 2012-06-02 17:21
-category: Reposts
+layout:     post
+title:      Your Virtual Real Friend
+date:       2012-06-02 17:21
+categories: [Reposts]
+tags:       []
 ---
 <a href="http://spectrum.ieee.org/automaton/robotics/humanoids/japanese-mh2-shoulder-robot-wants-to-be-your-friend-literally"><img class="aligncenter size-full wp-image-596" title="Shoulder Mounted Robot Friend" src="http://raritet-blog.s3.amazonaws.com/img/mh2_1-1338278540426.jpg" alt="" width="450" height="408" /></a>
 

@@ -1,8 +1,9 @@
 ---
-layout: post
-title: Challenger
-date: 2012-04-27 18:31
-category: Reposts
+layout:     post
+title:      Challenger
+date:       2012-04-27 18:31
+categories: [Reposts]
+tags:       [photography]
 ---
 Incredible idea this guy had! Click on the picture to see some of his other work.
 

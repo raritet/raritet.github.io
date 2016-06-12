@@ -1,8 +1,9 @@
 ---
-layout: post
-title: Mai-Kai Restaurant and Polynesian Show
-date: 2014-12-10 20:34
-category: My Photographs
+layout:     post
+title:      Mai-Kai Restaurant and Polynesian Show
+date:       2014-12-10 20:34
+categories: [My Photographs]
+tags:       [photography, Fort Lauderdale, tiki, Florida]
 ---
 
 ![Mai-Kai](http://raritet-blog.s3.amazonaws.com/img/DSCF1241.jpg)
