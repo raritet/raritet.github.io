@@ -5,7 +5,7 @@ title: Contact
 
 ## Andy Oliver
 
-That's the name under which I do my creative stuff. It helps to keep my various web presences from diluting each other.
+That's the name under which I do my creative stuff. Let's call it my _nom de plume_ or maybe my _nom de guerre_. It helps to keep my web presences from diluting each other. At my "day job" I'm called Andrew Barthle.
 
 You can contact me by
 
