@@ -1,9 +1,13 @@
 ---
-layout:     post
-title:      Artificial Synesthesia
-date:       2016-06-08 00:00
-categories: [My Ideas]
-tags:       [AR, MR]
+layout: post
+title: Artificial Synesthesia
+date: '2016-06-08 00:00'
+categories:
+  - My Ideas
+tags:
+  - AR
+  - MR
+published: true
 ---
 
 This post has been a good while in the making. For maybe a year or so, I've been mulling an idea for a novel application of augmented reality systems. (I've actually been mulling several ideas, but this one is perhaps the most exciting to me at the moment.) After a good bit of research, it's pretty clear to me that the programming required is beyond my ability to perform on evenings and weekends—those of which are free of other obligations, no less. So, I'm going to present my research to-date here, summarized loosely in the form of a (very informal) research proposal.
@@ -45,6 +49,8 @@ While reading about Vladimir Nabokov's particular case of grapheme-color synesth
 It turns out that implementing this is not as straightforward as I thought. In basic AR applications the developer trains a computer vision (CV) library such as [OpenCV](http://opencv.org/) with an image called a "fiducial marker." OpenCV then looks for this image in the video stream and can overlay something on top. This fiducial marker often has a geometric pattern such that its orientation in space is easily determined, allowing the overlay to make sense in three-dimensions. There are several toys and [video games](http://www.nintendo.com/3ds/ar-cards) that make use of this, with three-dimensional characters rendered on a playing field.
 
 I had hoped to more or less replace the fiducial marker used in AR applications with the output of an OCR library; and I suspect that might still be possible. But, as far as I can tell at this point, the gold standard open source OCR library, [Tesseract](https://github.com/tesseract-ocr), doesn't work like that. Rather, it just outputs the characters corresponding to the text it finds in the image.
+
+Update: I've come across the [Google Cloud Vision API](https://cloud.google.com/vision/reference/rest/v1/images/annotate#feature) which might be helpful with its `TEXT_DETECTION` functionality, though perhaps slow being cloud-based.
 
 Other ideas included training the CV library with hundreds or thousands of fiducial markers; one for every letter in every common typeface. However, that will likely be very computationally intensive. And it seems outright inelegant when we know that OCR software exists.
 
