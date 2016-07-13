@@ -2,11 +2,10 @@
 layout: post
 title: Artificial Synesthesia
 date: '2016-06-08 00:00'
-categories:
-  - My Ideas
 tags:
   - AR
   - MR
+  - my-ideas
 published: true
 ---
 

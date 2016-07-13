@@ -2,9 +2,9 @@
 layout:     post
 title:      Challenger
 date:       2012-04-27 18:31
-categories: [Reposts]
-tags:       [photography]
+tags:       [reposts, photography]
 ---
+
 Incredible idea this guy had! Click on the picture to see some of his other work.
 
 <a title="Cauliflower Space Shuttle Challenger, 1986 by Laser Bread, on Flickr" href="http://www.flickr.com/photos/laserbread/6810046585/"><img src="http://farm8.staticflickr.com/7018/6810046585_ce1ce12845.jpg" alt="Cauliflower Space Shuttle Challenger, 1986" /></a>

@@ -2,8 +2,7 @@
 layout:     post
 title:      Tromsø, Norge
 date:       2015-01-31 11:15
-categories: [My Photographs]
-tags:       [Norway, Norge, Tromsø, photography]
+tags:       [Norway, Norge, Tromsø, my-photography, travel]
 ---
 
 ![The aurora over Troms](http://raritet-blog.s3.amazonaws.com/img/20150121-DSCF0519.jpg)

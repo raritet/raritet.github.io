@@ -2,8 +2,7 @@
 layout:     post
 title:      Lemonhead
 date:       2016-07-05 15:27
-categories: [My Photography]
-tags:       [candy, photography, commissions, lemonhead]
+tags:       [candy, my-photography, commissions, lemonhead]
 ---
 
 A friend of mine is about to open a candy store and I offered to take some pictures for marketing and whatnot. So to practice and to give him an idea of what I have in mind, I took a few pictures and made this:
