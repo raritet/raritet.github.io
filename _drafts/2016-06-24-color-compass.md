@@ -1,9 +1,8 @@
 ---
 layout:     post
 title:      Color Compass
-date:       2016-06-24 13:00
-categories: [My Projects]
-tags:       [Arduino, compass]
+date:       '2016-06-24 13:00'
+tags:       [Arduino, compass, my-projects]
 ---
 
 In addition to posting my more developed ideas in the form of (highly informal) research proposals, I'm working on documenting my completed projects as though they were (heavily abbreviated) scholarly papers. I find that it helps me keep focus. And it doesn't hurt that I dream of returning to academia at some point.
