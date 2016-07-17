@@ -2,10 +2,7 @@
 layout: post
 title: Artificial Synesthesia
 date: '2016-06-08 00:00'
-tags:
-  - AR
-  - MR
-  - my-ideas
+tags: [AR, MR, my-ideas]
 published: true
 ---
 
