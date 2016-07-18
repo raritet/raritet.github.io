@@ -19,7 +19,7 @@ And in that context the idea of using an analog TV as a picture frame is ironic.
 
 <iframe src="https://player.vimeo.com/video/87426740?color=ffffff&title=0&byline=0&portrait=0" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Ahh, gotta love how it warms up like that before you see the snow. And snow! Analog noise seems so nice when compared to today's digital glitches. I wonder if in a few years we will look back longingly at digital glitches.
+Ahh, gotta love how it warms up like that before you see the snow. And snow! Analog noise seems so nice (visually and aurally) when compared to today's digital glitches. I wonder if in a few years we will look back longingly at digital glitches.
 
 Anyway, I made this particular implementation around a readily available single board computer about the size of a credit card, the [Raspberry Pi](https://www.raspberrypi.org/), and a few other odds and ends to tie it all together. The system wirelessly downloads new photos from an album on my (or any) Flickr account and displays them on the screen in a random order.
 
