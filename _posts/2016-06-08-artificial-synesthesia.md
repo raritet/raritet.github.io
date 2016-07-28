@@ -2,7 +2,10 @@
 layout: post
 title: Artificial Synesthesia
 date: '2016-06-08 00:00'
-tags: [AR, MR, my-ideas]
+tags:
+  - AR
+  - MR
+  - my-ideas
 published: true
 ---
 
@@ -111,7 +114,7 @@ In the case of the MR systems, the signal flow must account for the third dimens
 
 Given the problems discussed in the Background section, based on my current research it appears that I will have to explore the innards of the Tesseract OCR library to extract the needed outline information. It is my understanding that Tesseract finds outlines—or uses outlines—to make a judgment as to what text is represented. But it is not clear that that process is made transparent enough to reach in and play with intermediate steps.
 
-I suppose another problem will be determining if something is in fact text. Otherwise, my program might just end up demanding that Tesseract make a guess as to what text an outline represents, whether it actually is text or not. That will lead to all sorts of funny results with random color areas all over the view. That is not necessarily a bad thing, and could provide the user with something like _artifical imagination_ as a row of light poles starts to look like a string of capital 'I's or lowercase 'L's. In fact, this idea warrants further study as a separate concept.
+I suppose another problem will be determining if something is in fact text. Otherwise, my program might just end up demanding that Tesseract make a guess as to what text an outline represents, whether it actually is text or not. That will lead to all sorts of funny results with random color areas all over the view. That is not necessarily a bad thing, and could provide the user with something like _artifical imagination_ as a row of light poles starts to look like a string of capital 'I's or lowercase 'L's. Hallucination is only a step further, as some [research suggests](https://www.sciencedaily.com/releases/2015/10/151012174508.htm) that the mind trying too hard to make sense of senses results in spurious perceptions. In fact, I believe this idea warrants further study as a separate concept.
 
 But if we want to stick with the clean artificial synesthesia implementation, we need to remove the noise. If Tesseract provides a certainty of its output (another pending research question), we can use that to determine whether we should in fact apply a color overlay at a particular location. If not, we will again have to reach in to the library and see if we can find some variable somewhere that we can use to make some sort of judgment on the quality of the character recognition.
 
