@@ -15,7 +15,7 @@ Chances are I'll update this post with more detail. But I'd also like to prepare
 
 ## Abstract
 
-Many animals and even plants exhibit _magnetocetption_, an ability to sense magnetic fields, though it has been reasonably well established experimentally that humans don't. It is believed that, in at least some cases, magnetoception manifests within the organism's visual field. If magnetoception is in fact visual in nature, then it should be easy enough to augment the human visual sense with the capability of perceiving magnetism as well. Without building a whole mixed reality rig to overlay a grid or provide a heads-up display on the visual field [Terminator style](http://terminator.wikia.com/wiki/Head-up_display?file=T-800a_Night_Vision.jpg), I propose to provide that sense by simply presenting the user a color that corresponds to compass heading.
+Many animals and even plants exhibit _magnetoception_, an ability to sense magnetic fields, though it has been reasonably well established experimentally that humans don't. It is believed that, in at least some cases, magnetoception manifests within the organism's visual field. If magnetoception is in fact visual in nature, then it should be easy enough to augment the human visual sense with the capability of perceiving magnetism as well. Without building a whole mixed reality rig to overlay a grid or provide a heads-up display on the visual field [Terminator style](http://terminator.wikia.com/wiki/Head-up_display?file=T-800a_Night_Vision.jpg), I propose to provide that sense by simply presenting the user a color that corresponds to compass heading.
 
 ## Background
 
