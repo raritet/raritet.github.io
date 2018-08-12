@@ -25,7 +25,7 @@ The [KidRobot Munny](https://www.kidrobot.com/collections/munny) is a do-it-your
 
 But, as an engineer, I thought "how can I make these interactive?"
 
-Meanwhile, I read that some scientists believe that pigeons may see magnetic fields, possibly overlaid in their visual field. One theory is that a light-sensitive protein, called _cryptochrome_, found in the retinas of many animals is actually responsive to magnetic fields. Interestingly, it takes extremely strong magnetic fields to affect change in a "normal" chemical reaction (fields much stronger than that of the Earth). However, there is the case of something called a _radical pair_ wherein the fates of two electrons are entangled (yes, we're talking about quantum mechanics here), resulting in magnetic field-dependent outcomes of reactions with these radial pairs.
+Meanwhile, I read that some scientists believe that pigeons may see magnetic fields, possibly overlaid in their visual field. One theory is that a light-sensitive protein, called _cryptochrome_, found in the retinas of many animals is actually responsive to magnetic fields. Interestingly, it takes extremely strong magnetic fields to affect change in a "normal" chemical reaction (fields much stronger than that of the Earth). However, there is the case of something called a _radical pair_ wherein the fates of two electrons are entangled (yes, we're talking about quantum mechanics here), resulting in magnetic field-dependent outcomes of reactions with these radical pairs.
 
 That lead to some daydreaming on my part about how that would work for a human. In the case of birds, though no one has been able to _see_ it for themselves yet, we have an idea of how the magnetic field might look.
 
